@@ -5,62 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oh!</title>
 <style>
-body { 
-    background: #1a1a1a; 
-    color: white; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-align: center; 
+body {
     margin: 0;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #5f9ea0;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-h1 { color: #ffcc00; text-shadow: 2px 2px #000; }
+h1 {
+    margin-bottom: 30px;
+}
 
-button { 
-    padding: 12px; 
-    background: #444; 
-    color: white; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    transition: background 0.2s;
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-button {
+    display: block;
+    padding: 20px 30px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-}
-button:hover { background: #666; border-bottom: 2px solid #ffcc00; }
-button:active { background: #222; }
-
-.system-label { 
-    grid-column: 1 / -1; 
-    text-align: left; 
-    border-bottom: 1px solid #444; 
-    margin-top: 20px;
-    color: #aaa;
-    font-size: 0.9em;
-    text-transform: uppercase;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(95,158,160,0.6);
+    transition: all 0.3s ease;
 }
 
-p.description {
-    color: #ccc; 
-    font-size: 1em; 
-    max-width: 800px; 
-    margin: 10px auto;
+.game-button:hover {
+    background: rgba(0,0,0,0.7);
+    transform: scale(1.05);
+}
+
+a.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 </style>
 </head>
 <body>
 
-<h1>Well, this is awkward...</h1>
-<p class="description">
-    If you're here, you tried to get to one of my OTHER sites, but you didn't add the rest of the link. Well, since I'm such a cool fella, I'll link you my sites, and some others
-</p>
+<h1>Hello!</h1>
+<p>Welcome, I'm sure you're trying to go to my g*mes sites and accidentally forgot to add the rest of the link. Thankfully for you, I'm nice, so here's all of my sites here for your enjoyment.</p>
 
+<div class="game-list">
 
-<!-- Menu -->
-<div class="menu">
-    <div class="system-label"Sites"</div>
-    <a href="https://demonlemon1-byte.github.io/Personal-site-tehehe/" class="button">Main Personal Site</a>
-    <a href="https://demonlemon1-byte.github.io/them-gosh-darn-vidja-g-mes/index.html" class="button">G*mes</a>
-    <a href="https://demonlemon1-byte.github.io/emubooyyys/" class="button">Retro G*mes</a>
-    <a href="https://demonlemon1-byte.github.io/embedmaker/" class="button">Embedder</a>
-    <a href="https://arc-desktop.base44.app" class="button">Arc OS (Not Mine)</a>
-    <a href="https://deepakrummy.github.io" class="button">G*me Site Holy Grail</a>
+      <a href="../Personal-site-tehehe/index.html" class="game-button">Personal Site</a>
+      <a href="../emubooyyys/index.html" class="game-button">EmulatorBasedS</a>
+      <a href="../them-gosh-darn-vidja-g-mes/index.html" class="game-button">G*mes!</a>
+      <a href="../embedmaker/index.html" class="game-button">Embedder</a>
+
+        <!-- Add more games below -->
+</div>
+
+</body>
+</html>
